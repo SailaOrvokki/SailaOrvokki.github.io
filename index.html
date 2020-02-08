@@ -9,95 +9,149 @@
     <meta name="author" content="Saila Hyvönen">
     <link rel="stylesheet" href="SOstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="header">
-            <h2>My Portfolio</h2>
-            <h3>I, me and myself</h3>
 
-            <ul>
-                <li><a href="https://github.com/SailaOrvokki/SailaOrvokki.github.io">My code to GitHub</a></li>
-                <li><a href="https://fi.linkedin.com/in/sailaorvokkihyvonen">Visit my LinkedIn<a></li>
-                <!-- <li><a href="#">Link</a>-->
-            </ul>
-        </div>
-
-        <div class="left">
-            <div class="card">
-                <h3>About Me</h3>
-                <a target="_blank" href="maisema.jpg">
-                    <img src="maisema.jpg" alt="maisema" style="width:150px">
-                </a>
-                <div class="fakeimg" style="height:100px;">Kesäinen auringonlasku</div>
-                <h4> Pää pilvissä mutta jalata tukevasti maassa </h4>
-                <p> Olen Pirkanmaalle kotiutunut ja<br>
-                    juuriltani Pohjois-Karjalainen,<br>
-                    joka suhtauttuu elämään<br>
-                    lapsenomaisella uteliaisuudella.</p>
-                <br>
-                <p> Uteliaisuus vie toisinaan tutkimaan<br>
-                    uusia asioita ja toisinaan<br>
-                    <p> tienpäälle tutustumaan uusiin ihmisiin. </p>
-            </div>
-        </div>
-
-        <div class="middle">
-            <div class="card">
-                <h3>Schools</h4>
-                    <a target="_blank" href="start.jpg">
-                        <img src="start.jpg" alt="asennus" style="width:150px">
-                    </a>
-                    <div class="fakeimg" style="height:100px;">Windowsin asennusta</div>
-                    <h4> Ei oppi ojaan kaada... </h4>
-                    <p> vai kuinka se nyt menikään.<br>
-                        <p> Koulussa ollen opittu monenlaista<br>
-                            mielenkiintoista asiaa.<br>
-                            Itselle yksi mieluisimpia oli<br>
-                            työaseman käyttöönotto- kurssilla tehtävä<br>
-                            harjoitustyö<br>
-                            <br>
-                            Näet harjoitustyöni<br>
-                           <a href="Työaseman käyttöönotto-harjoitustyö_SailaHyvönen – pikakuvake.lnk">TÄÄLTÄ</a>
-                            <p>Lisäksi koulussa olen saanut hyvän perustiedon<br>
-                                nettisivujen teosta mm. HTML, CSS, React<br>
-                                tyyleillä.
-                                Lisäksi perus nettisivuihin on opeteltu<br>
-                                yhdistämään tietokantaa<br>
-                                käyttämällä MySQL, phpMyAdmin ja Knex.</p>
-            </div>
-        </div>
-
-        <div class="right">
-            <div class="card">
-                <h3>Hobby</h3>
-                <a target="_blank" href="HäHä.jpg">
-                    <img src="HäHä.jpg" alt="HäHä" style="width:150px">
-                </a>
-                <div class="fakeimg" style="height:100px;">Hälläpyörät 60 v</div>
-                <h4> Partio, aikuikuisena hurahtanut </h4>
-                <p> Yhtenä kouluun liittyvänä projektina<br>
-                    tehtiin lippukunnalle uudet nettisivut<br>
-                    WordPress alustalle</p>
-                <br>
-                <p> Käy tutustumassa<br>
-                    Hämeenkyrön Hälläpyörien sivulle</p>
-                <p><a href="https://hallapyorat.fi/">TÄSTÄ</a></p>
-                <p></p>
-                <br>
-                <p> Ja partio harrastukseen<br>
-                    Suomen Partiolaisten sivuilla</p>
-                <p><a href="https://www.partio.fi/">TÄSTÄ</a></p>
-                <p></p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <h3>This's all,</h3>
+    <div class="container-fluid">
+        <div class="page-header">
             <br>
-            <h4> Thank's to You visit my side </h4>
+            <h1>Portfolio</h1>
+            <br>
+            <pre>
+        "Elämä on täynnä suuria ihmeitä sille,
+         joka on valmis ottamaan niitä vastaan."
+    
+         Muumipappa
+        </pre>
+            <br>
         </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-header">Tietoa minusta</div>
+                <div class="card-body">
+                    <img class="card-img-top" src="oma kuva.jpg" alt="oma kuva" style="width:150px">
+
+                    <h5 class="card-title"> Pää pilvissä, mutta jalat tukevasti maan pinnalla </h5>
+                    <p class="card-text">
+                        Kaaoksen hallinta on erityisalaani.
+                        <br>
+                        Olen Pirkanmaalle kotiutunut,
+                        juuriltani Pohjois-Karjalainen
+                        joka suhtautuu elämään
+                        lapsenomaisella uteliaisuudella.
+                        <br>
+                        Uteliaisuus vie toisinaan tutkimaan
+                        uusia asioita ja toisinaan
+                        tienpäälle tutustumaan uusiin ihmisiin.
+                        <br>
+                        Tarkempi työhistoriani löytyy
+                        <a href="https://fi.linkedin.com/in/sailaorvokkihyvonen">LinkedIn<a>
+                                profiilista.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <pre>
+            "Ilman hulluja unelmia
+             ei synny viisaita 
+             päätöksiä"
+                    
+             Tommy Tabermann
+            </pre>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Koulutus</div>
+                <div class="card-body">
+                    <img class="card-img-top" src="get start.jpg" alt="asennus" style="width:150px">
+                    <h5 class="card-title"> Ei oppi ojaan kaada...
+                        vai miten se nyt menikään
+                    </h5>
+                    <p class="card-text">
+                        Opiskelen ohjelmistosuunnittelun datanomiksi Tredussa.
+                        <br>
+                        Koulutus on antanut hyvän pohjan kehittyä ohjelmointikielien
+                        kuten HTML, CSS, React
+                        sekä tietokantojen hallintatyökalujen
+                        kuten MySQL, phpMyAdmin ja Knex käytössä.
+                        <br>
+                        Lähitulevaisuudessa tulen syventämään React:sa sekä tietokannoissa osaamista.
+                        <br>
+                        Yksi mieluisimmista oppimuskokemuksista oli
+                        Työaseman käyttöönotto- kurssilla tekemäni
+                        <a href="Työaseman käyttöönotto-harjoitustyö_SailaHyvönen.pdf" class="card-link">
+                            harjoitustyö.</a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <pre>
+            "Minkä kuulet, unohdat. 
+             Minkä näet, muistat. 
+             Minkä teet, opit." 
+                                                    
+             Kiinalainen sananlasku
+            </pre>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Harrastukseni</div>
+                <div class="card-body">
+                    <img class="card-img-top" src="HäHä.jpg" alt="HäHä" style="width:150px">
+                    <h5 class="card-title"> Partio, aikuisena hurahtanut </h5>
+                    <p class="card-text">
+                        Yhtenä kouluun liittyvänä projektina
+                        tehtiin kolmen hengen porukalla
+                        lippukunnalle uudet nettisivut
+                        WordPress alustalle
+                        Hämeenkyrön Hälläpyörien<a href="https://hallapyorat.fi/"> verkkosivut</a>.
+                    </p>
+                    <p class="card-text">
+                        Partion kautta olen saanut osallistua tekijänä Suomen suurimpaan partioleiriin,
+                        <a href="https://fi.scoutwiki.org/Roihu">Finnjamboree Roihu 2016</a>.
+                        <br>
+                        Saappat oli suuret, kuten monesti partiossa tapaa olla, mutta hyvällä yhteistyöllä saatiin
+                        upea leiri tehtyä.
+                    </p>
+
+                </div>
+                <div class="card-footer">
+                    <pre>
+            "Puut ovat runoja,
+             jotka maa kirjoittaa 
+             taivaalle."
+                            
+             Kahlil Gibran
+            </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="text">
+                <p>
+                    Kiitos, kun vierailit sivuillani
+                    <br>
+                    Kiinostuitko?
+                    <br>
+                    Ole yhteydessä: sailaorvokkihyvonen(at)gmail.com
+                </p>
+            </div>
+            <pre>
+        "Ja päätökset pitää tehdä oikeassa mielenvireessä ja 
+         mieluiten nopeasti, ettei vire mene ohi."
+                        
+         Vilijonkka
+        </pre>
+            <br>
+        </div>
+
     </div>
 
 </body>

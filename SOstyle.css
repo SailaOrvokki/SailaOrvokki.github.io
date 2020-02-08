@@ -1,131 +1,79 @@
-body {
-  color: rgb(49, 49, 49);
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+
+pre {
+	width: 100%;
+	font-size: 40px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.page-header {
+  background-color: rgb(86, 163, 199);
+  padding: 10px;
+  text-align: left;
+  color: rgb(11, 49, 66);
+}
+
+.page-footer {
+  background-color: rgb(86, 163, 199);
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2;
+  color: rgb(11, 49, 66);
+}
+
+
+.card-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(182, 232, 255);
+}
+
+.card-text {
+  color: rgb(11, 49, 66);
+  font-size: 15px;
+  text-align: center;
+  line-height: 2;
+}
+
+.card-footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 a {
-  color: rgb(3, 54, 83);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  color: rgb(11, 49, 66);
 }
-a:link {
-  text-decoration: none;
-}
+
+a:link,
 a:visited {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
+
+a:hover,
 a:active {
   text-decoration: underline;
 }
 
-p {
-  text-align: center;
-}
-
-h2 {
-  color: rgb(49, 49, 49);  
-  font-size: 30px;
-}
-
-.heder { grid-area: header; } 
-.left { grid-area: left; } 
-.middle { grid-area: middle; } 
-.right { grid-area: right; } 
-.footer { grid-area: footer; } 
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'left left middle middle right right'
-    'footer footer footer footer footer footer';
-}
-
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  color: rgb(49, 49, 49);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 15px;
-}
-
-/* Style the header */
-.header {
-  grid-area: header;
-  background-color: rgb(95, 155, 155);
-  padding: 5px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-li {
-  float: center;
-}
-li a {
-  display: block;
-  padding: 20x;
-  float: center;
-}
-
-/* image styles start */
 img {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  width: 150px;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+h5 {
+  font-weight: bold;
+  color: rgb(11, 49, 66);
+  font-size: 15px;
+  text-align: center;
 }
-/* image styles stop*/
 
 
-  /* Container for flexboxes */
-  .row {
-    display: -webkit-flex;
-    display: flex;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
   }
-
-
-  /* footer style start*/
-  .footer {
-    grid-area: footer;
-    background-color:rgb(95, 155, 155);
-    padding: 10px;
-    text-align: center;
-  }
-  /* footer style end*/
