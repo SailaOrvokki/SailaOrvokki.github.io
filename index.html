@@ -13,31 +13,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Tyyli löytyy SOstyle.css tiedostosta */
+      </style>
+
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="page-header">
-            <br>
-            <h1>Portfolio</h1>
-            <br>
-            <pre>
-        "Elämä on täynnä suuria ihmeitä sille,
-         joka on valmis ottamaan niitä vastaan."
-    
-         Muumipappa
-        </pre>
-            <br>
-        </div>
+       <!--Header start-->
+       <div id="my-header" class="header">
+        <h2>Portfolio</h2>
+        <h4>Tältä sivulta löytyy tekemiäni töitä ja<br> 
+            tällä hetkellä sivu toimii pääasiallisena esittelysivunani
+        </h4>
+    </div>
+    <!--Header stop-->
 
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-header">Tietoa minusta</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="mie" class="card">
+                <div class="card-header"><h3>Tietoa minusta</h3></div>
                 <div class="card-body">
-                    <img class="card-img-top" src="oma kuva.jpg" alt="oma kuva" style="width:150px">
-
-                    <h5 class="card-title"> Pää pilvissä, mutta jalat tukevasti maan pinnalla </h5>
+                    <img class="d-block w-30 card-img-top" src="kuvat/oma kuva.jpg" alt="oma kuva" style="width:150px">
+                    <h4 class="card-title"> Pää pilvissä, mutta jalat tukevasti maan pinnalla </h4>
                     <p class="card-text">
                         Kaaoksen hallinta on erityisalaani.
                         <br>
@@ -51,100 +56,114 @@
                         tienpäälle tutustumaan uusiin ihmisiin.
                         <br>
                         Tarkempi työhistoriani löytyy
-                        <a href="https://www.linkedin.com/in/sailahyvonen/">LinkedIn<a>
-                                profiilista.
+                        <a href="https://www.linkedin.com/in/sailahyvonen/" target="_blank">LinkedIn<a>
+                        profiilista.
                     </p>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-header">Koulutus</div>
+          </div>
+          <div class="carousel-item">
+            <div id="harrastus" class="card">
+                <div class="card-header"><h3>Harrastukseni</h3></div>
                 <div class="card-body">
-                    <img class="card-img-top" src="get start.jpg" alt="asennus" style="width:150px">
-                    <h5 class="card-title"> Ei oppi ojaan kaada...
-                        vai miten se nyt menikään
-                    </h5>
+                    <img class="d-block w-30 card-img-top" src="kuvat/HäHä.jpg" alt="HäHä" style="width:150px">
+                    <h4 class="card-title"> Partio, aikuisena hurahtanut </h4>
                     <p class="card-text">
-                        Opiskelen ohjelmistosuunnittelun datanomiksi Tredussa.
-                        <br>
-                        Koulutus on antanut hyvän pohjan kehittyä ohjelmointikielien
-                        kuten HTML, CSS, React
+                        Partion kautta olen saanut osallistua tekijänä Suomen suurimpaan partioleiriin,
+                        <a href="https://fi.scoutwiki.org/Roihu" target="_blank">Finnjamboree Roihu 2016</a>.<br>
+                        Saappat oli suuret, kuten monesti partiossa tapaa olla, mutta hyvällä yhteistyöllä saatiin
+                        upea leiri tehtyä.
+                   <br>
+                   <br>
+                       Partion lisäksi harrastan paljon käsitöitä.<br>
+                       Neulon, virkkaan ja ompelen sekä askartelen vuodenaikojen mukaan.
+                       Uusin "hurahduksiani" on tunisialainen virkkaus ts. koukkuaminen.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="koulutus" class="card">
+                <div class="card-header"><h3>Koulutus</h3></div>
+                <div class="card-body">
+                    <img class="d-block w-30 card-img-top" src="kuvat/start.jpg" alt="asennus" style="width:150px">
+                    <h4 class="card-title"> Ei oppi ojaan kaada...
+                        vai miten se nyt menikään
+                    </h4>
+                    <p class="card-text">
+                        Opiskelen tieto- ja viestintätekniikan perustutkinnon ohjelmistotuotannon osaamisalaa Tampereen seudun ammattiopistossa.
+                        .<br>
+                        Koulutus on antanut hyvän pohjan verkkosivujen suunnitteluun ja toteuttamiseen HTML:llä ja CSS:llä.<br>
+                        Ohjelmointikielissä ollaan tutustuttu JavaScript:n, React:n
                         sekä tietokantojen hallintatyökalujen
-                        kuten MySQL, phpMyAdmin ja Knex käytössä.
+                        käyttöön MySQL, phpMyAdmin ja Knex myötä.<br>
                         <br>
-                        Lähitulevaisuudessa tulen syventämään React:sa sekä tietokannoissa osaamista.
-                        <br>
+                        Lähitulevaisuudessa tulen syventämään osaamistani ainakin JavaScript:n, PHP:n ja SQL:n osalta, sillä nämä ovat itselleni mielenkiintoisimpia.<br>
                         Yksi mieluisimmista oppimuskokemuksista oli
                         Työaseman käyttöönotto- kurssilla tekemäni
-                        <a href="Työaseman käyttöönotto-harjoitustyö_SailaHyvönen.pdf" class="card-link">
-                            harjoitustyö.</a>
+                        <a href="tiedostot/Työaseman käyttöönotto-harjoitustyö_SailaHyvönen.pdf" target="_blank" class="card-link">harjoitustyö.</a>
                         <br>
                         <br>
                         Muita koulussa tehtyjä ryhmä- ja projektitöitä on Hiedanrannan Paja yhteisölle tehty
-                        <a href="http://juksami.nodeeli5.net/" class="card-link">
-                            nettisivuehdotelma</a> jossa käytettiin minun tekemää tyylitiedostoa.
+                        <a href="https://juksami.nodeeli5.net/" target="_blank"class="card-link">nettisivuehdotelma</a> jossa käytettiin minun tekemää tyylitiedostoa.
                         <br>
-                        <br>
-                        React kurssin lopuksi tehtiin ryhmätyöskentelynä
-                        <a href="http://cleaners.nodeeli1.net/" class="card-link">
-                            siivouspalvelu</a> sivusto.
-                        <br>
-                        Tämän sivun tekemiseen käytettiin minun tietokantasuunnitelmaa sekä
-                        <a href="HUISPASU-siivouspalvelu_user story.pdf" class="card-link"> User Story:a</a> joita
-                        muokattiin yhdessä projektiin sopivammaksi.
-                        Oma osuus tässä projektissa oli Varaa arviokäynti- osuus sekä pääasiallinen projektin hallinta.
-                        <br>
-
+                        
                     </p>
-
+    
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">Harrastukseni</div>
-                <div class="card-body">
-                    <img class="card-img-top" src="HäHä.jpg" alt="HäHä" style="width:150px">
-                    <h5 class="card-title"> Partio, aikuisena hurahtanut </h5>
-                    <p class="card-text">
-                        Yhtenä kouluun liittyvänä projektina
-                        tehtiin kolmen hengen porukalla
-                        lippukunnalle uudet nettisivut
-                        WordPress alustalle
-                        Hämeenkyrön Hälläpyörien<a href="https://hallapyorat.fi/"> verkkosivut</a>.
-                    </p>
-                    <p class="card-text">
-                        Partion kautta olen saanut osallistua tekijänä Suomen suurimpaan partioleiriin,
-                        <a href="https://fi.scoutwiki.org/Roihu">Finnjamboree Roihu 2016</a>.
-                        <br>
-                        Saappat oli suuret, kuten monesti partiossa tapaa olla, mutta hyvällä yhteistyöllä saatiin
-                        upea leiri tehtyä.
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div class="page-footer">
-            <div class="text">
-                <p>
-                    Kiitos, kun vierailit sivuillani
-                    <br>
-                    Kiinostuitko?
-                    <br>
-                    Ole yhteydessä: sailaorvokkihyvonen(at)gmail.com
-                </p>
-            </div>
-            <pre>
-                "Minkä kuulet, unohdat. 
-                 Minkä näet, muistat. 
-                 Minkä teet, opit." 
-                                                        
-                 Kiinalainen sananlasku
-                </pre>
-            <br>
-            <p>Sivut päivitetty 20.2.2020</p>
-        </div>
-
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
+
+  <!--Footer start-->
+  <!--Company information start-->
+  <div id="my-footer" class="container-fluid">
+    <div class="row">
+      <!--Company information stop-->
+      <!--LINKS 2 start-->
+      <div id="sananlasku" class="col">
+        <p class="card-taxt">
+            <strong>
+                "Minkä kuulet, unohdat.<br>
+                Minkä näet, muistat.<br>
+                Minkä teet, opit."<br>
+                <br>
+                Kiinalainen sananlasku
+            </p>
+        </strong>
+      </div>
+      <!--LINKS 2 stop-->
+
+      <!--Contact information start-->
+      <div id="yhteydet" class="col">
+          <h6 class="text-uppercase font-weight-bold">Lisätietoa ja yhteydet</h6>
+          <p>
+              <a href="https://www.linkedin.com/in/sailahyvonen/"><img src="kuvat/linkedin_icon.png" alt="LinkedIn" style="width:40px;height:40px;"></a>
+              <a href="mailto:sohyvonen@outlook.com"><img src="kuvat/email_icon.png" alt="LinkedIn" style="width:55px;height:55px;"></a>
+            </p>
+      </div>
+      <!--Contact information stop-->
+    </div>
+  
+    <!--Copyright-->
+    <div class="row">
+      <div class="col">
+      <p class="text-center">© 2021 Copyright:
+        <strong>Saila Hyvönen</strong>
+      </p>
+      </div>
+    </div>
+  </div>
+  <!--Footer stop-->
 
 </body>
 
